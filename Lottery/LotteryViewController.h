@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GenerateRandom.h"
 
 @interface LotteryViewController : UIViewController {
     IBOutlet UILabel *ball1;

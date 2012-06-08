@@ -27,7 +27,17 @@
 {
     if (motion == UIEventSubtypeMotionShake)
     {
-        [ball1 setText:@"11"];
+        GenerateRandom *r = [[GenerateRandom alloc] init];
+        NSMutableArray *result = [r generate];
+
+        [ball1 setText:[[result objectAtIndex:0] stringValue]];
+        [ball2 setText:[[result objectAtIndex:1] stringValue]];
+        
+        [ball3 setText:[[result objectAtIndex:2] stringValue]];
+        [ball4 setText:[[result objectAtIndex:3] stringValue]];
+        
+        [ball5 setText:[[result objectAtIndex:4] stringValue]];
+        [ball6 setText:[[result objectAtIndex:5] stringValue]];
     }
 }
 

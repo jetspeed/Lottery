@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		707DCFD715825AF100AE5CE8 /* GenerateRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCFD615825AF100AE5CE8 /* GenerateRandom.m */; };
 		70A85AC8158237C1004B4471 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A85AC7158237C1004B4471 /* UIKit.framework */; };
 		70A85ACA158237C1004B4471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A85AC9158237C1004B4471 /* Foundation.framework */; };
 		70A85ACC158237C1004B4471 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A85ACB158237C1004B4471 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		707DCFD515825AF100AE5CE8 /* GenerateRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateRandom.h; sourceTree = "<group>"; };
+		707DCFD615825AF100AE5CE8 /* GenerateRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateRandom.m; sourceTree = "<group>"; };
 		70A85AC3158237C1004B4471 /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A85AC7158237C1004B4471 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70A85AC9158237C1004B4471 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				70A85ADC158237C1004B4471 /* LotteryViewController.h */,
 				70A85ADE158237C1004B4471 /* LotteryViewController.m */,
 				70A85ACE158237C1004B4471 /* Supporting Files */,
+				707DCFD515825AF100AE5CE8 /* GenerateRandom.h */,
+				707DCFD615825AF100AE5CE8 /* GenerateRandom.m */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				70A85AD4158237C1004B4471 /* main.m in Sources */,
 				70A85AD8158237C1004B4471 /* LotteryAppDelegate.m in Sources */,
 				70A85ADF158237C1004B4471 /* LotteryViewController.m in Sources */,
+				707DCFD715825AF100AE5CE8 /* GenerateRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +441,7 @@
 				70A85AFB158237C1004B4471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70A85AFC158237C1004B4471 /* Build configuration list for PBXNativeTarget "LotteryTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +450,7 @@
 				70A85AFE158237C1004B4471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

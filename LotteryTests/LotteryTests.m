@@ -7,6 +7,7 @@
 //
 
 #import "LotteryTests.h"
+#import "GenerateRandom.h"
 
 @implementation LotteryTests
 
@@ -26,7 +27,17 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in LotteryTests");
+    //STFail(@"Unit tests are not implemented yet in LotteryTests");
+}
+
+- (void) testGenerateRandom
+{
+    GenerateRandom *r = [[GenerateRandom alloc] init];
+    NSMutableArray *result = [r generate];
+    
+    for (int i = 0; i < 6; i++) {
+        NSLog(@"result %@", [result objectAtIndex:i]);
+    }
 }
 
 @end
