@@ -1,0 +1,9 @@
+build
+*xcodeproj/*
+*tmproj
+.DS_Store
+profile
+*.pbxuser
+*.mode1v3
+External/GHUnit/*
+.svn
