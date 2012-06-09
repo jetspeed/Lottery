@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		707DB1C11582FBE500BE91ED /* shake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 707DB1C01582FBE500BE91ED /* shake.wav */; };
+		707DB1C21582FDB000BE91ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707DB1BD1582FB8800BE91ED /* AVFoundation.framework */; };
 		707DCFD715825AF100AE5CE8 /* GenerateRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCFD615825AF100AE5CE8 /* GenerateRandom.m */; };
 		70A85AC8158237C1004B4471 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A85AC7158237C1004B4471 /* UIKit.framework */; };
 		70A85ACA158237C1004B4471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A85AC9158237C1004B4471 /* Foundation.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		707DB1BD1582FB8800BE91ED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		707DB1C01582FBE500BE91ED /* shake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake.wav; sourceTree = "<group>"; };
 		707DCFD515825AF100AE5CE8 /* GenerateRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateRandom.h; sourceTree = "<group>"; };
 		707DCFD615825AF100AE5CE8 /* GenerateRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateRandom.m; sourceTree = "<group>"; };
 		70A85AC3158237C1004B4471 /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707DB1C21582FDB000BE91ED /* AVFoundation.framework in Frameworks */,
 				70A85AC8158237C1004B4471 /* UIKit.framework in Frameworks */,
 				70A85ACA158237C1004B4471 /* Foundation.framework in Frameworks */,
 				70A85ACC158237C1004B4471 /* CoreGraphics.framework in Frameworks */,
@@ -107,6 +112,7 @@
 		70A85AC6158237C1004B4471 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				707DB1BD1582FB8800BE91ED /* AVFoundation.framework */,
 				70A85AC7158237C1004B4471 /* UIKit.framework */,
 				70A85AC9158237C1004B4471 /* Foundation.framework */,
 				70A85ACB158237C1004B4471 /* CoreGraphics.framework */,
@@ -133,6 +139,7 @@
 		70A85ACE158237C1004B4471 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				707DB1C01582FBE500BE91ED /* shake.wav */,
 				70A85ACF158237C1004B4471 /* Lottery-Info.plist */,
 				70A85AD0158237C1004B4471 /* InfoPlist.strings */,
 				70A85AD3158237C1004B4471 /* main.m */,
@@ -233,6 +240,7 @@
 				70A85AD2158237C1004B4471 /* InfoPlist.strings in Resources */,
 				70A85ADB158237C1004B4471 /* MainStoryboard.storyboard in Resources */,
 				70A85ADD158237C1004B4471 /* LotteryViewController.h in Resources */,
+				707DB1C11582FBE500BE91ED /* shake.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

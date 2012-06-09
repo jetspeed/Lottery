@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GenerateRandom.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface LotteryViewController : UIViewController {
+@interface LotteryViewController : UIViewController<AVAudioPlayerDelegate> {
     IBOutlet UILabel *ball1;
     IBOutlet UILabel *ball2;
     IBOutlet UILabel *ball3;

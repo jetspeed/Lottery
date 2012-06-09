@@ -23,10 +23,29 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
+#pragma mark - Play Sound
+- (void) playBackgroundSoundEffect {
+    NSString *soundFilePath = 
+    [[NSBundle mainBundle] pathForResource: @"shake" 
+                                    ofType: @"wav"]; 
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath]; 
+    AVAudioPlayer *player = 
+    [[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
+                                           error: nil];
+    [player prepareToPlay];
+    
+    [player setDelegate: self];
+    //self.player.numberOfLoops = -1;    // Loop playback until invoke stop method    
+    [player play];
+}
+
+
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if (motion == UIEventSubtypeMotionShake)
     {
+        [self playBackgroundSoundEffect];
         GenerateRandom *r = [[GenerateRandom alloc] init];
         NSMutableArray *result = [r generate];
 
@@ -40,6 +59,8 @@
         [ball6 setText:[[result objectAtIndex:5] stringValue]];
     }
 }
+
+
 
 #pragma mark - View lifecycle
 
