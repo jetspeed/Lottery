@@ -15,6 +15,7 @@
 @synthesize ball4;
 @synthesize ball5;
 @synthesize ball6;
+@synthesize player;
 
 
 - (void)didReceiveMemoryWarning
@@ -30,14 +31,15 @@
     [[NSBundle mainBundle] pathForResource: @"shake" 
                                     ofType: @"wav"]; 
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath]; 
-    AVAudioPlayer *player = 
+    AVAudioPlayer *p = 
     [[AVAudioPlayer alloc] initWithContentsOfURL: fileURL
                                            error: nil];
-    [player prepareToPlay];
+    self.player = p;
+    [self.player prepareToPlay];
     
-    [player setDelegate: self];
+    [self.player setDelegate: self];
     //self.player.numberOfLoops = -1;    // Loop playback until invoke stop method    
-    [player play];
+    [self.player play];
 }
 
 
@@ -46,6 +48,7 @@
     if (motion == UIEventSubtypeMotionShake)
     {
         [self playBackgroundSoundEffect];
+        sleep(8);
         GenerateRandom *r = [[GenerateRandom alloc] init];
         NSMutableArray *result = [r generate];
 

@@ -17,6 +17,8 @@
     IBOutlet UILabel *ball4;
     IBOutlet UILabel *ball5;
     IBOutlet UILabel *ball6;
+    
+    AVAudioPlayer *player;
 }
 
 
@@ -27,5 +29,6 @@
 @property (nonatomic, retain)  IBOutlet UILabel *ball5;
 @property (nonatomic, retain)  IBOutlet UILabel *ball6;
 
+@property (nonatomic, retain) AVAudioPlayer *player;
 
 @end
