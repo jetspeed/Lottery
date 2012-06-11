@@ -20,7 +20,7 @@
     return self;
 }
 
-- (NSMutableArray*) generate
+- (NSMutableArray*) generateRed
 {
     int container[33];
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:6];
@@ -39,6 +39,11 @@
         container[33 - j - 1] = value;
     }
     return result;
+}
+
+- (int) generateBlue
+{
+    return arc4random_uniform(16) + 1;
 }
 
 @end

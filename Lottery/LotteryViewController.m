@@ -15,6 +15,8 @@
 @synthesize ball4;
 @synthesize ball5;
 @synthesize ball6;
+@synthesize blueBall;
+
 @synthesize player;
 
 
@@ -50,7 +52,7 @@
         [self playBackgroundSoundEffect];
         sleep(8);
         GenerateRandom *r = [[GenerateRandom alloc] init];
-        NSMutableArray *result = [r generate];
+        NSMutableArray *result = [r generateRed];
 
         [ball1 setText:[[result objectAtIndex:0] stringValue]];
         [ball2 setText:[[result objectAtIndex:1] stringValue]];
@@ -60,6 +62,8 @@
         
         [ball5 setText:[[result objectAtIndex:4] stringValue]];
         [ball6 setText:[[result objectAtIndex:5] stringValue]];
+        
+        [blueBall setText:[NSString stringWithFormat:@"%d", [r generateBlue]]];
     }
 }
 

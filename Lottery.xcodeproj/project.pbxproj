@@ -124,14 +124,14 @@
 		70A85ACD158237C1004B4471 /* Lottery */ = {
 			isa = PBXGroup;
 			children = (
+				707DCFD515825AF100AE5CE8 /* GenerateRandom.h */,
+				707DCFD615825AF100AE5CE8 /* GenerateRandom.m */,
 				70A85AD6158237C1004B4471 /* LotteryAppDelegate.h */,
 				70A85AD7158237C1004B4471 /* LotteryAppDelegate.m */,
 				70A85AD9158237C1004B4471 /* MainStoryboard.storyboard */,
 				70A85ADC158237C1004B4471 /* LotteryViewController.h */,
 				70A85ADE158237C1004B4471 /* LotteryViewController.m */,
 				70A85ACE158237C1004B4471 /* Supporting Files */,
-				707DCFD515825AF100AE5CE8 /* GenerateRandom.h */,
-				707DCFD615825AF100AE5CE8 /* GenerateRandom.m */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";

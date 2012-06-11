@@ -10,7 +10,8 @@
 
 @interface GenerateRandom : NSObject
 
--(NSMutableArray*) generate;
+-(NSMutableArray*) generateRed;
+-(int) generateBlue;
 
 @end
 
