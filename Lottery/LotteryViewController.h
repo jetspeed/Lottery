@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GenerateRandom.h"
 #import <AVFoundation/AVFoundation.h>
+#import "GADBannerView.h"
 
 @interface LotteryViewController : UIViewController<AVAudioPlayerDelegate> {
     IBOutlet UILabel *ball1;
@@ -20,6 +21,9 @@
     
     IBOutlet UILabel *blueBall;
     AVAudioPlayer *player;
+    
+    GADBannerView *bannerView_;
+
 }
 
 
